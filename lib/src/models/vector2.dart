@@ -34,5 +34,10 @@ class Vector2 {
     return Vector2(_x+other.x, _y+other.y);
   }
 
+  @override
+  String toString() {
+    return "[$x, $y]";
+  }
+
 
 }

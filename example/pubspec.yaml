@@ -6,3 +6,5 @@ environment:
 dependencies:
   geoffNoise:
     git: https://github.com/Kibibibit/geoffNoise
+  image:
+    git: https://github.com/brendan-duncan/image

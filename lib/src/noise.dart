@@ -3,7 +3,7 @@ import 'noise/perlin/perlin.dart';
 
 class Noise {
 
-  static Perlin perlin = Perlin();
+  static Perlin _perlin = Perlin();
 
 
   static int _seed = DateTime.now().millisecond;
@@ -15,11 +15,11 @@ class Noise {
   static void setMagnitude(double magnitude) => _magnitude = magnitude;
 
   static double perlin2d(double x, double y) {
-    return perlin.perin2d(x, y, seed, magnitude);
+    return _perlin.perin2d(x, y, seed, magnitude);
   }
 
   static double perlin3d(double x, double y, double z) {
-    return perlin.perlin3d(x, y, z, seed, magnitude);
+    return _perlin.perlin3d(x, y, z, seed, magnitude);
   }
 
 }
