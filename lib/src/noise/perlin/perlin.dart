@@ -76,7 +76,7 @@ class Perlin {
   static double _dotGridGradient2(int ix, int iy, double x, double y, int seed, double magnitude) {
     Vector2 gradient = _randomVector2(ix, iy, seed, magnitude);
     Vector2 dist = Vector2(x-(ix.toDouble()), y-(iy.toDouble()));
-    print ("$x, $y, $ix, $iy, $dist");
+    print ("$x, $y, $ix, $iy, ${x-ix}, ${y-iy} $dist");
     return gradient.dotProduct(dist);
   }
 
