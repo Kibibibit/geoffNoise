@@ -71,7 +71,7 @@ class Perlin {
 
   }
 
-  static double _roundTo(double value, int precision) => (value * (10*precision)).round() / (10*precision);
+  static double _roundTo(double value, int precision) => (value * pow(10,precision)).round() / (10* pow(10,precision));
 
   static double _dotGridGradient2(int ix, int iy, double x, double y, int seed, double magnitude) {
     Vector2 gradient = _randomVector2(ix, iy, seed, magnitude);
