@@ -22,7 +22,7 @@ void main() {
       double perlin = Noise.perlin2d(x/cellX, y/cellY);
       int d = ((perlin+1)*0.5*255).round();
 
-      print("${x/cellX}, ${y/cellY} => $d ($perlin)");
+      //print("${x/cellX}, ${y/cellY} => $d ($perlin)");
 
       image.setPixelRgba(x, y, d, d, d);
     }
