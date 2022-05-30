@@ -79,4 +79,17 @@ class Float {
     return this + other.inverseAbs();
   }
 
+  Float operator *(covariant Float other) {
+
+    int sig = _sig*other._sig;
+    int exp = _exp+other._exp;
+
+
+    Float preRound = Float._(sig, exp);
+
+
+    return preRound;
+
+  }
+
 }

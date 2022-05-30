@@ -28,7 +28,6 @@ void main() {
   print(test);
 
 
-
   // Noise.setSeed(0);
 
   // for (int y = 0; y < height; y++) {
