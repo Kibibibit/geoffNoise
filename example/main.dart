@@ -14,18 +14,10 @@ void main() {
 
   Image image = Image(width, height);
 
-  Float test = Float.fromDouble(5.24);
-  Float test2 = Float.fromDouble(1.123);
-  print(test);
-  print(test2);
+  Float test = Float.fromDouble(4.73);
+  Float test2 = Float.fromDouble(5.41);
 
-  print(test + test2);
-  print(test - test2);
-  print(test2 - test);
-
-  test += test2;
-
-  print(test);
+  print(test*test2);
 
 
   // Noise.setSeed(0);
