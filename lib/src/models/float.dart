@@ -1,4 +1,3 @@
-
 import 'dart:math';
 
 class Float {
@@ -37,6 +36,14 @@ class Float {
   void _setSig(int v) => _sig = v;
   void _setExp(int v) => _exp = v;
 
+  Float abs() {
+    return Float._(_sig.abs(), _exp);
+  }
+
+  Float inverseAbs() {
+    return Float._(_sig.abs()*-1, _exp);
+  }
+
 
 
   @override
@@ -48,11 +55,11 @@ class Float {
     Float lower;
 
     if (this._exp > other._exp) {
-      higher = this;
-      lower = other;
+      higher = Float._(this._sig, this._exp);
+      lower = Float._(other._sig, other._exp);
     } else {
-      higher = other;
-      lower = this;
+      higher = Float._(other._sig, other._exp);
+      lower = Float._(this._sig, this._exp);
     }
 
 
@@ -66,6 +73,10 @@ class Float {
 
 
     return Float._(higher._sig, higher._exp);
+  }
+
+  Float operator -(covariant Float other) {
+    return this + other.inverseAbs();
   }
 
 }
