@@ -98,10 +98,13 @@ class Float {
 
     double sig = _sig/other._sig;
 
-    print("$_sig / ${other._sig} = $sig");
-    print("$_exp + ${other._exp} = $exp");
 
-    return this;
+    while (sig.round() != sig) {
+      sig *= 10;
+      exp--;
+    }
+
+    return Float._(sig.toInt(), exp);
 
   }
 

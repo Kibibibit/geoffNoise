@@ -15,7 +15,7 @@ void main() {
   Image image = Image(width, height);
 
   Float test = Float.fromDouble(4.73);
-  Float test2 = Float.fromDouble(5.41);
+  Float test2 = Float.fromDouble(5.041);
 
   print(test.toExpString());
   print(test2.toExpString());
