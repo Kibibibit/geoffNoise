@@ -89,7 +89,7 @@ class Float {
   }
 
   Float operator /(covariant Float other) {
-    int exp = _exp-other._exp;
+    int exp = _exp+other._exp;
 
 
     double sig = _sig/other._sig;

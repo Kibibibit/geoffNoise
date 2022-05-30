@@ -17,7 +17,7 @@ void main() {
   Float test = Float.fromDouble(4.73);
   Float test2 = Float.fromDouble(5.41);
 
-  print(test*test2);
+  print(test/test2);
 
 
   // Noise.setSeed(0);
