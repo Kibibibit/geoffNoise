@@ -27,7 +27,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "140aa9b913428735df9569063fbbbfbde13796cf"
+      resolved-ref: "6a919dc3fb4cbfc4ccf1ebfb56a0127bd63e6531"
       url: "https://github.com/Kibibibit/geoffNoise"
     source: git
     version: "0.0.0"
