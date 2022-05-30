@@ -14,8 +14,11 @@ void main() {
 
   Image image = Image(width, height);
 
+  Float test = Float.fromDouble(5.24);
 
-  
+  print(test);
+
+
 
   Noise.setSeed(0);
 

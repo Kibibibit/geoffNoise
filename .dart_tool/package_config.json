@@ -1,0 +1,14 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "geoffNoise",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    }
+  ],
+  "generated": "2022-05-30T02:58:07.501818Z",
+  "generator": "pub",
+  "generatorVersion": "2.18.0-149.0.dev"
+}
