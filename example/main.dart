@@ -1,6 +1,5 @@
 
 import 'dart:io';
-import 'dart:math';
 
 import 'package:geoffNoise/geoff_noise.dart';
 import 'package:image/image.dart';
@@ -14,6 +13,9 @@ void main() {
   int cellY = 20;
 
   Image image = Image(width, height);
+
+
+  
 
   Noise.setSeed(0);
 
@@ -30,12 +32,6 @@ void main() {
   }
 
   File('test.png').writeAsBytesSync(encodePng(image));
-
-  double val = 4.95-4;
-  int m = (val*pow(10,5)).round();
-  double val2 = m/(pow(10,5));
-
-  print("$val, $m, $val2");
 
 
 }

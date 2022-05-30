@@ -3,6 +3,7 @@ import 'dart:math';
 import '../../models/vector2.dart';
 import '../../models/vector3.dart';
 import '../utils/interpolate.dart';
+import '../utils/round_to.dart';
 
 class Perlin {
 
@@ -71,11 +72,10 @@ class Perlin {
 
   }
 
-  static double _roundTo(double value, int precision) => (value * pow(10,precision)).round() / pow(10,precision);
 
   static double _dotGridGradient2(int ix, int iy, double x, double y, int seed, double magnitude) {
     Vector2 gradient = _randomVector2(ix, iy, seed, magnitude);
-    Vector2 dist = Vector2(_roundTo(x-ix,5), _roundTo(y-iy, 5));
+    Vector2 dist = Vector2(roundTo(x-ix,5), roundTo(y-iy, 5));
     print ("$x, $y, $ix, $iy, $dist");
     return gradient.dotProduct(dist);
   }
