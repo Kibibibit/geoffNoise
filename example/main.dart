@@ -19,6 +19,9 @@ void main() {
   print(test);
 
 
+  test + Float.fromDouble(0.254);
+
+
 
   // Noise.setSeed(0);
 

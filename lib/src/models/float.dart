@@ -7,7 +7,7 @@ class Float {
   late int _exp;
 
   static Float fromInt(int v) {
-    return Float._().._setSig(v).._setExp(0);
+    return Float._(0,0).._setSig(v).._setExp(0);
   }
 
   static Float fromDouble(double v) {
@@ -17,14 +17,11 @@ class Float {
     int sig = int.parse(s.replaceAll(".", "")); 
 
 
-    return Float._().._setSig(sig).._setExp(e);
+    return Float._(0,0).._setSig(sig).._setExp(e);
 
   }
 
-  Float._() {
-    _sig = 0;
-    _exp = 0;   
-  }
+  Float._(this._sig, this._exp);
 
 
   double toDouble() {
@@ -58,12 +55,17 @@ class Float {
       lower = this;
     }
 
-    print("${higher._sig}, ${higher._exp}");
-    print("${lower._sig}, ${lower._exp}");
+
+    while (higher._exp != lower._exp) {
+      higher._exp--;
+      higher._sig *= 10;
+    }
+
+    higher._sig += lower._sig;
 
 
 
-    return this;
+    return Float._(higher._sig, higher._exp);
   }
 
 }
