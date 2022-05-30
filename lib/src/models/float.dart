@@ -32,6 +32,10 @@ class Float {
     return "${this.toDouble()}";
   }
 
+  String toExpString() {
+    return "$_sig x 10^$_exp";
+  }
+
 
   void _setSig(int v) => _sig = v;
   void _setExp(int v) => _exp = v;
