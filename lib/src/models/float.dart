@@ -47,6 +47,22 @@ class Float {
 
   Float operator +(covariant Float other) {
 
+    Float higher;
+    Float lower;
+
+    if (this._exp > other._exp) {
+      higher = this;
+      lower = other;
+    } else {
+      higher = other;
+      lower = this;
+    }
+
+    print("${higher._sig}, ${higher._exp}");
+    print("${lower._sig}, ${lower._exp}");
+
+
+
     return this;
   }
 

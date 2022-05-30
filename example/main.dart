@@ -20,21 +20,21 @@ void main() {
 
 
 
-  Noise.setSeed(0);
+  // Noise.setSeed(0);
 
-  for (int y = 0; y < height; y++) {
-    for (int x = 0; x < width; x++) {
+  // for (int y = 0; y < height; y++) {
+  //   for (int x = 0; x < width; x++) {
       
-      double perlin = Noise.perlin2d(x/cellX, y/cellY);
-      int d = ((perlin+1)*0.5*255).round();
+  //     double perlin = Noise.perlin2d(x/cellX, y/cellY);
+  //     int d = ((perlin+1)*0.5*255).round();
 
-      //print("${x/cellX}, ${y/cellY} => $d ($perlin)");
+  //     //print("${x/cellX}, ${y/cellY} => $d ($perlin)");
 
-      image.setPixelRgba(x, y, d, d, d);
-    }
-  }
+  //     image.setPixelRgba(x, y, d, d, d);
+  //   }
+  // }
 
-  File('test.png').writeAsBytesSync(encodePng(image));
+  // File('test.png').writeAsBytesSync(encodePng(image));
 
 
 }

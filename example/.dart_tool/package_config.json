@@ -21,9 +21,9 @@
     },
     {
       "name": "geoffNoise",
-      "rootUri": "file:///home/dmills/.pub-cache/git/geoffNoise-a77cd1877d9d9de0c15ba14ecec6a667ff7870d7/",
+      "rootUri": "file:///home/dmills/.pub-cache/git/geoffNoise-410ba0e6585583e69d6d48d3645df4de938333a3/",
       "packageUri": "lib/",
-      "languageVersion": "2.10"
+      "languageVersion": "2.12"
     },
     {
       "name": "image",
@@ -68,7 +68,7 @@
       "languageVersion": "2.10"
     }
   ],
-  "generated": "2022-05-30T02:57:26.592812Z",
+  "generated": "2022-05-30T02:58:32.230678Z",
   "generator": "pub",
   "generatorVersion": "2.18.0-149.0.dev"
 }
